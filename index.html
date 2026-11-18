@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diddii ke Rajya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- PAGE 1: WELCOME -->
+    <section class="page active" id="page1">
+        <div class="sparkles">✧ ✦ ✧</div>
+        <div class="crown">👑</div>
+
+        <p class="subtitle">Ek shahi celebration</p>
+        <h1>Happy Princess Day,<br><span>Himanshi 😘</span></h1>
+
+        <p class="description">
+            khaas meri princess ke liye😍 
+        </p>
+
+        <button class="main-btn" onclick="showPage(2)">
+            Rajya me prasthan kiya jaaye ✨
+        </button>
+
+        <div class="flowers">🌸 🦋 🌷 🦋 🌸</div>
+    </section>
+
+    <!-- PAGE 2: THE PRINCESS -->
+    <section class="page" id="page2">
+        <p class="subtitle">AAJ TAK KI CUTEST GALLERY</p>
+        <h1>MADAM JI KE DARSHAN 💗</h1>
+
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="images/kshama1.jpg" alt="Kshama">
+                <p>PARAM SUNDARI 😏</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/kshama2.jpg" alt="Kshama">
+                <p>MERI PRINCESS🎉</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/kshama3.jpg" alt="Kshama">
+                <p>HIMAANSHIIII BABU😘</p>
+            </div>
+        </div>
+
+        <div class="compliments">
+            <h2>You deserve all the love and happiness in the world, today and every day.🤗</h2>
+            <p>Bhala koi itna pyara kese ho sakta hai 😘</p>
+            <p>Tumhari smile meri puri duniya roshan kar deti hai.😊</p>
+            <p>Tum saath ho toh har din special lagta hai.💖</p>
+            <p>Tumhari har baat mujhe aur behtar insaan banati hai.</p>
+
+        </div>
+
+        <button class="main-btn" onclick="showPage(3)">
+            Khul ja simsim
+        </button>
+    </section>
+
+    <!-- PAGE 3: THE SURPRISE -->
+    <section class="page" id="page3">
+        <p class="subtitle">Abhi to party shuru hui hai</p>
+        <h1>Kuch Surprise ❤️</h1>
+
+        <div class="envelope" onclick="openLetter()">
+            <div class="envelope-icon">💌</div>
+            <p>Khat khola jaaye</p>
+        </div>
+
+        <div class="letter" id="letter">
+            <h2>Priya Didi shree, 💗</h2>
+
+            <p>
+                Happy Princess Day
+                Meri pyaari Himanshi,🥳🎉🎉!
+            </p>
+
+            <p>
+             Aaj Princess Day hai, aur mere liye tum hi meri Princess ho. 👑
+            </p>
+
+            <p>
+                Tumne meri zindagi ko khoobsurat banaya hai. Tumhari hasi, tumhari baatein aur tumhara saath mere liye sabse bada tohfa hai.
+            </p>
+             <p>
+                Main hamesha tumhe khush rakhne ki koshish karunga.
+            </p>
+
+            <p>
+                Dher sara pyaar🥰<br>
+                tumhara Anmol
+            </p>
+        </div>
+
+        <h2 class="final-wish">
+            Hamesha Meri Laxmi🥳
+        </h2>
+
+        <button class="main-btn" onclick="showPage(1)">
+            Rajye me chala jaye
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

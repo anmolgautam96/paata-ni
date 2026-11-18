@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #eee3ff, #ffe4ec);
+    color: #704663;
+    min-height: 100vh;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 65px 20px 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.7s ease;
+}
+
+.page.active {
+    display: flex;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.3rem, 7vw, 4rem);
+    color: #a64d83;
+    margin: 15px 0;
+}
+
+h1 span {
+    color: #dc79ac;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b17aab;
+}
+
+.description {
+    max-width: 450px;
+    line-height: 1.8;
+    margin: 15px 0 30px;
+}
+
+.crown {
+    font-size: 75px;
+    animation: float 2s infinite ease-in-out;
+}
+
+.sparkles {
+    font-size: 30px;
+    color: #d7a5d9;
+    letter-spacing: 15px;
+}
+
+.flowers {
+    margin-top: 55px;
+    font-size: 30px;
+}
+
+.main-btn {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #e68bb7, #b98be3);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px #d7a5d966;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 10px 25px #c78dbb77;
+}
+
+.music-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 10;
+    border: 1px solid #e5b7d2;
+    background: #ffffffcc;
+    color: #a64d83;
+    border-radius: 25px;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 25px 0;
+    max-width: 900px;
+}
+
+.photo-card {
+    background: white;
+    padding: 10px 10px 15px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px #b68bb833;
+    transform: rotate(-2deg);
+    transition: 0.3s;
+}
+
+.photo-card:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+.photo-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.photo-card p {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.compliments {
+    background: #ffffffa8;
+    padding: 22px;
+    border-radius: 18px;
+    max-width: 550px;
+    width: 100%;
+    line-height: 2.2;
+    margin: 15px 0;
+}
+
+.compliments h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    color: #b35d91;
+}
+
+.compliments p {
+    font-size: 13px;
+}
+
+.envelope {
+    margin: 30px 0;
+    cursor: pointer;
+    background: #ffffffb8;
+    padding: 30px 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #c68ebc33;
+    transition: 0.3s;
+}
+
+.envelope:hover {
+    transform: scale(1.05);
+}
+
+.envelope-icon {
+    font-size: 75px;
+}
+
+.envelope p {
+    margin-top: 10px;
+}
+
+.letter {
+    display: none;
+    max-width: 500px;
+    width: 100%;
+    background: #fffdf8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px #b68bb833;
+    line-height: 1.9;
+    text-align: left;
+    animation: fadeIn 0.8s;
+}
+
+.letter h2 {
+    color: #b35d91;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.letter p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.letter.open {
+    display: block;
+}
+
+.final-wish {
+    margin-top: 35px;
+    color: #b35d91;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-card {
+        width: min(260px, 85vw);
+    }
+
+    .photo-card img {
+        height: 230px;
+    }
+
+    .compliments {
+        padding: 15px;
+    }
+
+    .letter {
+        padding: 20px;
+    }
+}
